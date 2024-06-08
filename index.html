@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+       .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            position: relative;
+        }
+       .background-image {
+            position: top center;
+            z-index: -1;
+            width: 88%;
+            height: 88%;
+            object-fit: contain;
+        }
+       .social-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+       .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+       .google-search {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="background.jpg" alt="Your Picture" class="background-image">
+
+    <h1>About Me</h1>
+    <p>Hello My name is Nancy I'm a passionate developer who loves creating innovative solutions.</p>
+
+    <div class="social-links">
+        <a href="mailto:okosungeorge1@gmail.com" class="button">Email</a>
+        <a href="https://www.instagram.com/georgino_11_?igsh=MWRtMXhhazhoNzFubg%3D%3D&utm_source=qr" class="button">Instagram</a>
+        <a href="https://wa.me/09159791166" class="button">WhatsApp</a>
+    </div>
+
+    <div class="google-search">
+        <input type="text" id="search" placeholder="Search Google...">
+        <button onclick="window.open('https://www.google.com/search?q=' + document.getElementById('search').value)">Go</button>
+    </div>
+</div>
+
+<script>
+    function openGoogleSearch() {
+        window.open('https://www.google.com/search?q=' + document.getElementById('search').value);
+    }
+</script>
+
+</body>
+</html>
